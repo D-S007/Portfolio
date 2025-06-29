@@ -30,7 +30,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Web Resume</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
@@ -40,20 +40,27 @@
             <!-- Page Content-->
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                    <div class="d-flex justify-content-center align-items-center mb-4" style="gap: 1rem;">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                        <!-- Download resume button-->
+                        <a class="btn btn-sm btn-outline-primary d-flex align-items-center" href="https://docs.google.com/document/d/1VuR9IvGH0ATdNQxBPB5c0UuX4eMollxzMWt2w-_RsC0/edit?usp=sharing" download style="font-size: 0.95rem;">
+                            <div class="d-inline-block bi bi-download me-2"></div>
+                            Download Resume
+                        </a>
+                    </div>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        </div><!--If i remove this, and place /div at below comment, it makes only Experience square and all fit width-->
                         <!-- Experience Section-->
                         <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="https://drive.google.com/file/d/17nBxwic7_e_WMNCC24dybSeddHxWbHRI/view">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3 d-flex justify-content-center align-items-center" style="width:55px; height:55px;">
+                                    <img src="assets/blogsicon.png" alt="Tech Stack" style="width:32px; height:32px; object-fit:contain; background:transparent; border-radius:0;">
+                                </div>
+                                <h2 class="fw-bolder mb-0" style="color:#0d6efd;">
+                                    <span class="text-gradient d-inline">Experience</span>
+                                </h2>
                             </div>
                             <!-- Experience Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
@@ -74,7 +81,7 @@
                                                 ● Identified key challenges, trends, and proposed five SDG-6 aligned interventions.
                                             </div>
                                         </div>
-                                        </div></div>
+                                        <!--/div, 1. if i place this here, Experience section will be square & all fit to width, 2. if i remove and place it above, all fit to width-->
                                     </div>
                                 </div>
                             </div>
@@ -83,30 +90,38 @@
 
                         <!-- Contact Section-->
                         <section>
-                            <h2 class="text-primary fw-bolder mb-4">Contact</h2>
+                            <!--<h2 class="text-primary fw-bolder mb-4">Contact</h2>-->
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3 d-flex justify-content-center align-items-center" style="width:55px; height:55px;">
+                                    <img src="assets/contact.png" alt="Tech Stack" style="width:32px; height:32px; object-fit:contain; background:transparent; border-radius:0;">
+                                </div>
+                                <h2 class="fw-bolder mb-0" style="color:#0d6efd;">
+                                    <span class="text-gradient d-inline">Contact</span>
+                                </h2>
+                            </div>
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col-lg-8 mx-auto">
                                             <div class="mb-2">
-                                                <img src="assets/icons/phone.png" alt="Phone" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
-                                                <strong>Phone:</strong> <span class="text-muted">+91-9310835814</span>
+                                                <img src="assets/phone.png" alt="Phone" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
+                                                <strong>Phone:</strong> <span class="flex-sm-row"> +91-9310835814</span>
                                             </div>
                                             <div class="mb-2">
-                                                <img src="assets/icons/email.png" alt="Email" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
-                                                <strong>Email:</strong> <span class="text-muted">davidsingh.professional@gmail.com</span>
+                                                <img src="assets/email.png" alt="Email" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
+                                                <strong>Email:</strong> <a href="mailto:davidsingh.professional@gmail.com" class="text-primary">davidsingh.professional@gmail.com</a>
                                             </div>
                                             <div class="mb-2">
-                                                <img src="assets/icons/location.png" alt="Location" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
-                                                <strong>Location:</strong> <span class="text-muted">Delhi, India</span>
+                                                <img src="assets/location.png" alt="Location" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
+                                                <strong>Location:</strong> <span class="fw-sm-row">New Delhi, India</span>
                                             </div>
                                             <div class="mb-2">
-                                                <img src="assets/icons/linkedin.png" alt="LinkedIn" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
-                                                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" class="text-primary">linkedin.com/in/yourprofile</a>
+                                                <img src="assets/linkedin.png" alt="LinkedIn" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
+                                                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/david-singh-96830324a/" class="text-primary">linkedin.com/in/david-singh</a>
                                             </div>
                                             <div class="mb-2">
-                                                <img src="assets/icons/portfolio.png" alt="Portfolio" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
-                                                <strong>Portfolio:</strong> <a href="https://yourportfolio.com" class="text-primary">yourportfolio.com</a>
+                                                <img src="assets/livesite.png" alt="Portfolio" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;">
+                                                <strong>Portfolio:</strong> <a href="https://d-s007.github.io/Portfolio/" class="text-primary">david-singh/Portfolio</a>
                                             </div>
                                         </div>
                                     </div>
@@ -115,7 +130,16 @@
                         </section>
                         <!-- Education Section-->
                         <section>
-                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+                            <!--<h2 class="text-secondary fw-bolder mb-4">Education</h2>-->
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3 d-flex justify-content-center align-items-center" style="width:55px; height:55px;">
+                                    <img src="assets/education.png" alt="Tech Stack" style="width:32px; height:32px; object-fit:contain; background:transparent; border-radius:0;">
+                                </div>
+                                <h2 class="fw-bolder mb-0" style="color:#0d6efd;">
+                                    <span class="text-gradient d-inline">Education</span>
+                                </h2>
+                            </div>
+                            
                             <!-- Education Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
@@ -130,47 +154,198 @@
                                                 <div class="fst-italic">
                                                     <div class="small text-muted">B.Tech.(CSE)</div>
                                                     <div class="small text-muted">Data Science Specialization</div>
+                                                    <div class="small fw-bold">CGPA: 7.2/10</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>DBMS, CN, OS </div></div>
+                                        <div class="col-lg-8">
+                                            <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Core CS Subjects</strong>
+                                                        <div class="small text-muted">
+                                                            DBMS, CN, OS, DSA, COA, DAA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Programming Languages</strong>
+                                                        <div class="small text-muted">
+                                                            Python, C++, Java
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Software & Tools</strong>
+                                                        <div class="small text-muted">
+                                                            Software Engineering, Project Management, Technical Communication
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Specializations</strong>
+                                                        <div class="small text-muted">
+                                                            Big Data & Analytics, Machine Learning, Web Designing, IoT, Cyber Security
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Mathematics & Logic</strong>
+                                                        <div class="small text-muted">
+                                                            DSTL, Engineering Mathematics
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Education Card 2-->
+                            <!--Education Card 2-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
+                                                <div class="text-secondary fw-bolder mb-2">2022</div>
                                                 <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
+                                                    <div class="small fw-bolder">Vidya Mandir Public School</div>
+                                                    <div class="small text-muted">Faridabad, Haryana</div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
+                                                    <div class="small text-muted">Senior Secondary(12th)</div>
+                                                    <div class="small fw-bold">80 %</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Physics, Chemistry, CS </div></div>
+                                        <div class="col-lg-8">
+                                            <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Science</strong>
+                                                        <div class="small text-muted">
+                                                            Physics, Chemistry
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Mathematics</strong>
+                                                        <div class="small text-muted">
+                                                            Linear algebra, Calculus, Probability, Differential Equations
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Computer Science</strong>
+                                                        <div class="small text-muted">
+                                                            Python
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Language</strong>
+                                                        <div class="small text-muted">
+                                                            English
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Education Card 3-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2020</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Vidya Mandir Public School</div>
+                                                    <div class="small text-muted">Faridabad, Haryana</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Secondary(10th)</div>
+                                                    <div class="small fw-bold">95 %</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Science</strong>
+                                                        <div class="small text-muted">
+                                                            Physics, Chemistry, Biology
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Mathematics</strong>
+                                                        <div class="small text-muted">
+                                                            Mathematics Standard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Computer Applications</strong>
+                                                        <div class="small text-muted">
+                                                            Python
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Language</strong>
+                                                        <div class="small text-muted">
+                                                            Hindi, English
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="bg-light border border-primary rounded-3 p-3 h-100">
+                                                        <strong>Social Science</strong>
+                                                        <div class="small text-muted">
+                                                            History, Geography, Civics, Economics
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
                         <!-- Tech Stack Section -->
                         <section>
-                            <h2 class="text-primary fw-bolder mb-4">Tech Stack</h2>
+                            <!--<h2 class="text-primary fw-bolder mb-4">Tech Stack</h2>-->
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3 d-flex justify-content-center align-items-center" style="width:55px; height:55px;">
+                                    <img src="assets/techstack.png" alt="Tech Stack" style="width:32px; height:32px; object-fit:contain; background:transparent; border-radius:0;">
+                                </div>
+                                <h2 class="fw-bolder mb-0" style="color:#0d6efd;">
+                                    <span class="text-gradient d-inline">Tech Stack</span>
+                                </h2>
+                            </div>
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row mb-4">
                                         <div class="col-md-4 mb-3">
                                             <h5 class="fw-bold text-secondary mb-2">Programming Languages</h5>
-                                            <span class="devicon-cplusplus-plain colored" title="C++" style="font-size:2rem;"></span>
-                                            <span class="devicon-python-plain-wordmark colored" title="Python" style="font-size:2rem;"></span>
-                                            <span class="devicon-java-plain-wordmark colored" title="Java" style="font-size:2rem;"></span>
-                                            <span class="devicon-mysql-plain-wordmark colored" title="SQL" style="font-size:2rem;"></span>
+                                            <span class="devicon-cplusplus-plain colored" title="C++" style="font-size:3rem;"></span>
+                                            <span class="devicon-python-plain-wordmark colored" title="Python" style="font-size:3rem;"></span>
+                                            <span class="devicon-java-plain-wordmark colored" title="Java" style="font-size:3rem;"></span>
+                                            <span class="devicon-mysql-plain-wordmark colored" title="SQL" style="font-size:3rem;"></span>
                                         </div>
                                         <div class="col-md-8">
                                             <h5 class="fw-bold text-secondary mb-2">Data Structures & Algorithms</h5>
@@ -198,45 +373,62 @@
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <h5 class="fw-bold text-secondary mb-2">Machine Learning</h5>
-                                            <span class="badge bg-light text-primary border border-primary me-2 mb-2"><i class="devicon-scikitlearn-plain"></i>Scikit-learn</span>
-                                            <span class="badge bg-light text-primary border border-primary me-2 mb-2"><i class="devicon-tensorflow-original"></i></i>TensorFlow</span>
-                                            <span class="badge bg-light text-primary border border-primary me-2 mb-2"><i class="devicon-nltk-plain-wordmark colored"></i>NLTK & Sentiment NLP Analysis</span>
-                                            <span class="badge bg-light text-primary border border-primary me-2 mb-2"><i class="devicon-predictivemodeling-plain-wordmark colored"></i>Predictive Models</span>
+                                            <span class="badge bg-light text-primary border border-primary me-2 mb-2">Scikit-learn</span> <!--<i class="devicon-scikitlearn-plain"></i>-->
+                                            <span class="badge bg-light text-primary border border-primary me-2 mb-2">TensorFlow</span> <!--<i class="devicon-tensorflow-original"></i>-->
+                                            <span class="badge bg-light text-primary border border-primary me-2 mb-2">NLTK & Sentiment NLP Analysis</span> <!--<i class="devicon-nltk-plain-wordmark colored"></i>-->
+                                            <span class="badge bg-light text-primary border border-primary me-2 mb-2">Predictive Models</span> <!--<i class="devicon-predictivemodeling-plain-wordmark colored"></i>-->
                                         </div>
                                     </div>
                                     <div class="row mb-4">
                                         <div class="col-md-6 mb-3">
                                             <h5 class="fw-bold text-secondary mb-2">Database Management</h5>
-                                            <span class="devicon-mysql-plain colored" title="MySQL" style="font-size:2rem;"></span>
-                                            <span class="devicon-mongodb-plain colored" title="MongoDB Atlas" style="font-size:2rem;"></span>
-                                            <span class="devicon-postgresql-plain colored" title="PostgreSQL" style="font-size:2rem;"></span>
+                                            <span class="devicon-mysql-plain-wordmark colored" title="MySQL" style="font-size:3rem;"></span>
+                                            <span class="devicon-mongodb-plain-wordmark colored" title="MongoDB Atlas" style="font-size:3rem;"></span>
+                                            <span class="devicon-postgresql-plain-wordmark colored" title="PostgreSQL" style="font-size:3rem;"></span>
                                         </div>
                                         <div class="col-md-6 mb-3">
                                             <h5 class="fw-bold text-secondary mb-2">Development Tools</h5>
-                                            <span class="devicon-git-plain colored" title="Git" style="font-size:2rem;"></span>
-                                            <span class="devicon-github-original colored" title="GitHub" style="font-size:2rem;"></span>
-                                            <span class="devicon-firebase-plain colored" title="Firebase" style="font-size:2rem;"></span>
-                                            <span class="devicon-fastapi-plain colored" title="FastAPI" style="font-size:2rem;"></span>
+                                            <span class="devicon-git-plain-wordmark colored" title="Git" style="font-size:3rem;"></span>
+                                            <span class="devicon-github-original-wordmark colored" title="GitHub" style="font-size:3rem;"></span>
+                                            <span class="devicon-firebase-plain-wordmark colored" title="Firebase" style="font-size:3rem;"></span>
+                                            <span class="devicon-fastapi-plain-wordmark colored" title="FastAPI" style="font-size:3rem;"></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        <!-- Professional Experience Section (already present, keep as is) -->
+                        
                         <!-- Projects Section -->
                         <section>
-                            <h2 class="text-primary fw-bolder mb-4">Projects</h2>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3 d-flex justify-content-center align-items-center" style="width:55px; height:55px;">
+                                    <img src="assets/projects.png" alt="Tech Stack" style="width:32px; height:32px; object-fit:contain; background:transparent; border-radius:0;">
+                                </div>
+                                <h2 class="fw-bolder mb-0" style="color:#0d6efd;">
+                                    <span class="text-gradient d-inline">Projects</span>
+                                </h2>
+                            </div>
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col-lg-12">
                                             <div class="mb-3">
-                                                <strong>Project Title 1</strong>
-                                                <div class="text-muted">Short description of the project, technologies used, and your role.</div>
+                                                <strong>WASH analysis </strong>
+                                                <div class="text-muted">Clean water, Sanitation and Hygience data analysis (50+ countries data) using python, SQL, 
+                                                    tableau.
+                                                </div>
                                             </div>
                                             <div class="mb-3">
-                                                <strong>Project Title 2</strong>
-                                                <div class="text-muted">Short description of the project, technologies used, and your role.</div>
+                                                <strong>YouReview</strong>
+                                                <div class="text-muted">A sentiment analysis tool for understanding user feedback on a product/service 
+                                                    by extracting & analyzing youtube comments and reddit pages using PRAW and Youtube API.
+                                                </div><!--Short description of the project, technologies used, and your role.-->
+                                            </div>
+                                            <div class="mb-3">
+                                                <strong>FlowForge AI</strong>
+                                                <div class="text-muted">An Intelligent Workflow and Code Generation Platform that can optimize workflows, 
+                                                    generate code snippets, and auto-create documentation from user inputs.
+                                                </div>
                                             </div>
                                             <!-- Add more projects as needed -->
                                         </div>
@@ -246,48 +438,114 @@
                         </section>
                         <!-- Divider-->
                         <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <!-- Professional skills list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Marketing</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical Analysis</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network Security</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe Software Suite</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
+                        
+                        <!-- Professional Skills-->
+                        <div class="d-flex align-items-center mb-4">
+                                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+                                    <h2 class="fw-bolder mb-0" style="color:#0d6efd;"><span class="text-gradient d-inline">Professional Skills</span></h2>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5" style="border-left: 6px solid #0d6efd; background: #f0f8ff;">
+                            <div class="card-body p-5">
+                                
+                                <!-- Hard Skills -->
+                                <h4 class="fw-bold text-secondary mb-3">Hard Skills</h4>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Data Cleaning & Preprocessing</div></div>
+                                    <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Statistical Analysis</div></div>
+                                    <div class="col"><div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Data Visualization</div></div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Machine Learning</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Predictive Modeling
                                         </div>
                                     </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">SQL & Database
+                                            Management</div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Programming (Python,
+                                            R)</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Big Data Tools
+                                            (Hadoop, Spark)</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Business Intelligence
+                                            (Tableau, Power BI)</div>
+                                    </div>
+                                </div>
+                                <!-- Soft Skills -->
+                                <h4 class="fw-bold text-secondary mb-3 mt-4">Soft Skills</h4>
+                                <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Problem Solving</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Critical Thinking
                                         </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Communication Skills
                                         </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ruby</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
+                                    </div>
+                                </div>
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Data Storytelling &
+                                            Presentation</div>
+                                    </div>
+                                    <div class="col mb-4 mb-md-0">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Collaboration &
+                                            Teamwork</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex align-items-center bg-white rounded-4 p-3 h-100 border border-primary">Time Management</div>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <!-- Language Section -->
+                        <section>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
+                                <h2 class="fw-bolder mb-0" style="color:#0d6efd;"><span class="text-gradient d-inline">Languages</span></h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card shadow border-0 rounded-4 mb-5 h-100" style="background: #f8f9fa;">
+                                        <div class="card-body p-4 d-flex flex-column align-items-start">
+                                            <h5 class="fw-bold mb-2"><i class="bi bi-translate me-2"></i>English</h5>
+                                            <span class="badge bg-primary mb-2">Proficient</span>
+                                            <div class="mb-1"><strong>Speaking:</strong> Excellent</div>
+                                            <div class="mb-1"><strong>Reading:</strong> Excellent</div>
+                                            <div class="mb-1"><strong>Writing:</strong> Excellent</div>
+                                            <div class="mb-1"><strong>Listening:</strong> Excellent</div>
+                                            <div class="small text-muted">CEFR: C1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card shadow border-0 rounded-4 mb-5 h-100" style="background: #f8f9fa;">
+                                        <div class="card-body p-4 d-flex flex-column align-items-start">
+                                            <h5 class="fw-bold mb-2"><i class="bi bi-translate me-2"></i>Hindi</h5>
+                                            <span class="badge bg-success mb-2">Fluent, Proficient</span>
+                                            <div class="mb-1"><strong>Speaking:</strong> Native</div>
+                                            <div class="mb-1"><strong>Reading:</strong> Excellent</div>
+                                            <div class="mb-1"><strong>Writing:</strong> Excellent</div>
+                                            <div class="mb-1"><strong>Listening:</strong> Excellent</div>
+                                            <div class="small text-muted">Mother Tongue</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section>        
                     </div>
                 </div>
             </div>
@@ -296,7 +554,7 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; David Singh 2025</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>
